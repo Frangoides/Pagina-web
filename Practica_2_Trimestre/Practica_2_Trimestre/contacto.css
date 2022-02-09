@@ -1,0 +1,153 @@
+*{
+    list-style: none;
+    text-decoration: none;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: white;
+    padding-left: 2px;
+    padding-right: 2px;
+    width: 99.1vw;
+    padding: 0;
+    margin: 0;
+    font-family:'Courier New', Courier, monospace;
+}
+
+
+nav {
+    background: rgb(241, 77, 77);
+    height: 80px;
+    width: 100%;
+}
+
+nav ul {
+    float: right;
+    margin-right: 20px;
+}
+
+nav ul li {
+    display: inline-block;
+    line-height: 80px;
+    margin: 0 5px;
+}
+
+nav ul li a {
+    color: black;
+    font-size: 17px;
+    padding: 7px 13px;
+    border-radius: 3px;
+    text-transform: uppercase;
+}
+
+label.logo{
+    color: black;
+    font-size: 35px;
+    line-height: 80px;
+    padding: 0 100px;
+    font-weight: bold;
+}
+.logo1{
+    width: 2vw;
+    margin-top: 2vh;
+    margin-right: 2vh;
+}
+a.active,a:hover{
+    background: rgb(255, 255, 255);
+    transition: .5s;
+}
+
+.checkbtn{
+    font-size: 30px;
+    margin-left: 30px;
+    line-height: 80px;
+    cursor: pointer;
+    padding-right: 20px;
+    float: right;
+    display: none;
+}
+
+#check{
+    display: none;
+}
+
+footer {
+    background: rgb(241, 77, 77);
+    height: 80px;
+    width: 100%;
+}
+
+footer ul {
+    text-align: center;
+    margin-right: 20px;
+}
+
+footer ul li {
+    display: inline-block;
+    line-height: 80px;
+    margin: 0 5px;
+}
+
+footer ul li a {
+    color: rgb(0, 0, 0);
+    font-size: 17px;
+    padding: 7px 13px;
+    border-radius: 3px;
+    text-transform: uppercase;
+}
+
+
+.article{
+    margin-top: 2vh;
+    text-align: center;
+    margin-right: 5vh;
+    width: 40vw;
+    margin-left: 60vh;
+}
+
+
+
+header{
+    display: flex;
+    flex-wrap: wrap;
+}
+.banner{ 
+    width: 20vw;
+}
+
+.grow {
+    flex-grow: 4;
+}
+.fieldset{
+    text-align: center;
+}
+@media screen and (max-width: 850px){
+   
+    .article{
+        margin-right: 0;
+        margin-left:24vh;  
+    }
+
+    nav ul li a{
+        
+       display:inline-block;
+       margin-right: 3vh;
+       
+    }
+    .aside, aside{
+        display: none;
+    }
+    label.logo{
+        display: none;
+        
+        
+    }
+    .logo1{
+        display: none;
+    }
+    .banner{
+        display: none;
+    }
+}

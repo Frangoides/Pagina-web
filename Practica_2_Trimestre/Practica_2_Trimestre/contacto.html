@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="contacto.css">
+    <title>Contacto</title>
+</head>
+<body>
+    <nav>
+     
+        <label class="logo"><img class="logo1" src="imagenes/icono.png">Contacto</label>
+        
+        <ul>
+            <li><a href="index.html">historia</a></li>
+            <li><a href="habilidades.html">habilidades</a></li>
+            <li><a href="combos.html">combos</a></li>
+            <li><a href="#">Contacto</a></li>
+            
+        </ul>
+    </nav>
+    
+        <article>
+            <div class="article">
+                <section>
+                    <div>
+                        <div class="grow">
+                            <form>                                  <!--Creación de un form para el contacto-->
+                                <fieldset class="fieldset">
+    
+                                    <!--Área de texto para escribir nombre y apellidos-->
+    
+                                    <legend>Contacto:</legend><br>
+                                    <label>Nombre:</label><br>
+                                    <input type="text" name="nombre" placeholder="Nombre" id="c"><br><br>
+    
+                                    <label>Primer apellido:</label><br>
+                                    <input type="text" name="apellido1" placeholder="Primer apellido"><br><br>
+    
+                                    <label>Segundo apellido:</label><br>
+                                    <input type="text" name="apellido2" placeholder="Segundo apellido"><br><br>
+    
+                                    <!--Selector con cada sexo en "input type=radio" para que se tenga que elegir obligatoriamente-->
+    
+                                    <p>Sexo:<br><br>
+    
+                                        <label>
+    
+                                            <input type="radio" name="sexo"><span>Hombre</span><br><br>
+    
+                                            <input type="radio" name="sexo"><span>Mujer</span><br><br>
+    
+                                            <input type="radio" name="sexo"><span>Otro</span><br><br>
+    
+                                        </label>
+                                    </p>
+    
+    
+                                    <!--fecha de nacimiento-->
+    
+                                    <label>Fecha de nacimiento</label><br><br>
+                                    <input type="date" name="fecha" placeholder="Fecha de nacimiento"><br><br>
+    
+                                    <!--correo electrónico-->
+    
+                                    <label>Correo electrónico</label><br><br>
+                                    <input type="email" name="email" placeholder="Correo electrónico"><br><br>
+    
+                                    <!--motivo-->
+    
+                                    <label>Motivo</label><br><br>
+                                    <textarea name="razon" placeholder="Escribe tu razón..." rows="10"
+                                        cols="30"></textarea><br><br>
+    
+                                    <!--alerta-->
+    
+                                    <input type="submit" value="Enviar" onclick="alert('Informacion enviada')"><br><br>
+                                </fieldset>
+                                <br>
+                                
+                            </form>
+                        </div>
+                    
+                    </div>
+                </section>
+   
+            </div>
+        </article>
+        <footer>
+    
+            <input type="checkbox" id="check">
+            <label for="check" class="checkbtn">
+                <i class="fas fa-bars"></i>
+            </label>
+            
+            <ul>
+                <li><a href="curiosidades.html">curiosidades</a></li>
+                <li><a href="skins.html">skins</a></li>
+                <li><a href="gameplay.html">gameplay</a></li>
+                <li><a href="clips.html">clips</a></li>
+            </ul>
+        
+    </footer>
+</body>
+</html>
