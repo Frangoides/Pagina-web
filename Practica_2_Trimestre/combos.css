@@ -74,6 +74,7 @@ label.logo{
     line-height: 80px;
     padding: 0 100px;
     font-weight: bold;
+    
 }
 
 .logo1{
@@ -100,58 +101,6 @@ a.active,a:hover{
     display: none;
 }
 
-.aside{
-    margin-top: 4vh;
-    width: 25vw;
-    
-    margin-left: 4vh;
-    
-}
-
-aside{
-    
-    background-size: cover;
-    height: calc(100vh - 80px);
-    margin-left: 7vh;
-}
-
-.article{
-    margin-top: 2vh;
-    margin-left: 20vh;
-    margin-right: 5vh;
-    width: 50vw;
-}
-
-
-
-header{
-    display: flex;
-    flex-wrap: wrap;
-}
-
-.lista{
-    color:black;
-    list-style: none;
-}
-
-.entradatitulo{
-    list-style: none;
-}
-
-
-.habilidad{ 
-    width: 3vw;
-}
-
-video{
-    width: 25vw;
-    margin-left: 10vw;
-}
-
-.ImagenAside{
-    width: 10vw;
-    margin-left: 12vh;
-}
 
 @media screen and (max-width: 850px){
    

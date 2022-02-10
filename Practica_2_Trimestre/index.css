@@ -101,6 +101,62 @@ a.active,a:hover{
     display: none;
 }
 
+.aside{
+    margin-top: 4vh;
+    width: 25vw;
+    
+    margin-left: 4vh;
+    
+}
+
+aside{
+    
+    background-size: cover;
+    height: calc(100vh - 80px);
+    margin-left: 7vh;
+}
+
+.textoaside{
+    margin-top: 2vh;
+    padding:20px;
+
+}
+
+
+.article{
+    margin-top: 2vh;
+    margin-left: 20vh;
+    margin-right: 5vh;
+    width: 50vw;
+}
+
+header{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.lista{
+    color:black;
+    list-style: none;
+    margin-left: 6vh;
+}
+
+.entradatitulo{
+    list-style: none;
+}
+
+
+.banner{ 
+    width: 50vw;
+}
+.ImagenAside{
+    width: 10vw;
+    margin-left: 12vh;
+}
+
+
+
+
 @media screen and (max-width: 850px){
    
     .article{

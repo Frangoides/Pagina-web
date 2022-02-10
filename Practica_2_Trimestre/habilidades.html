@@ -7,13 +7,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Katarina</title>
     <link rel="stylesheet" href="habilidades.css">
-    
+    <link rel="stylesheet" href="funciones.css">
+
 </head>
 
 <body>
     <nav>
 
         <label class="logo"><img class="logo1" src="imagenes/icono.png">Habilidades de Katarina</label>
+
 
         <ul>
             <li><a href="index.html">historia</a></li>
@@ -30,7 +32,15 @@
                 <p>
                 <h1>Pasiva: Voracidad</h1>
                 <br>
-                <img class="habilidad" src="imagenes/Voracidad.png">
+
+
+                <img id="myImg" alt="Pasiva: Voracidad <br><br><small>Cuando muere un campeón que haya recibido daño de Katarina en los últimos segundos, el enfriamiento
+                de sus habilidades se reduce drásticamente. Si Katarina recoge una daga, la usa para acuchillar a
+                todos los enemigos cercanos, lo que inflige daño mágico.<small>" class="habilidad"
+                    src="imagenes/Voracidad.png">
+
+
+
 
                 <br>
                 <br>
@@ -44,12 +54,17 @@
 
                 </video>
 
+
+
                 <br>
                 <br>
 
                 <h1>Q: Hoja rebotante</h1>
                 <br>
-                <img class="habilidad" src="imagenes/Hoja_Rebotante.png">
+                <img id="myImg2"
+                    alt="Q: Hoja rebotante <br><br><small> Katarina lanza al objetivo una daga que rebota hacia los enemigos cercanos antes de caer al suelo.<small>"
+                    class="
+                    habilidad" src="imagenes/Hoja_Rebotante.png">
 
                 <br>
                 <br>
@@ -67,7 +82,10 @@
 
                 <h1>W: Preparación</h1>
                 <br>
-                <img class="habilidad" src="imagenes/Preparacion.png">
+                <img id="myImg3"
+                    alt="W: Preparación <br><br><small> Katarina obtiene un aumento de velocidad de movimiento y lanza una daga al aire encima de ella.."
+                    class="
+                    habilidad" src="imagenes/Preparacion.png">
 
                 <br>
                 <br>
@@ -85,7 +103,8 @@
 
                 <h1>E: Shunpo</h1>
                 <br>
-                <img class="habilidad" src="imagenes/Shunpo.png">
+                <img id="myImg4" alt="E: Shunpo <br><br><small> Katarina aparece junto al objetivo. Lo golpea si es un enemigo o, de lo contrario, golpea al enemigo más
+                    cercano." class="habilidad" src="imagenes/Shunpo.png">
 
                 <br>
                 <br>
@@ -104,7 +123,9 @@
 
                 <h1>R: Loto Mortal</h1>
                 <br>
-                <img class="habilidad" src="imagenes/Loto_Mortal.png">
+                <img id="myImg5" alt="R: Loto Mortal <br><br><small>  Katarina despide una ráfaga de hojas e inflige gran cantidad de daño mágico a los 3 campeones enemigos
+                    más cercanos." 
+                  class="habilidad" src="imagenes/Loto_Mortal.png">
 
                 <br>
                 <br>
@@ -177,6 +198,23 @@
         </ul>
 
     </footer>
+    <div id="myModal" class="modal">
+
+
+        <span class="close">&times;</span>
+
+
+        <img class="modal-content" id="img01">
+
+
+        <h2>
+            <div id="caption"></div>
+            </h>
+            <div id="des"></div>
+            <div class="gif" id="ca"></div>
+
+    </div>
+    <script src="zoomimagenes.js"></script>
 </body>
 
 </html>

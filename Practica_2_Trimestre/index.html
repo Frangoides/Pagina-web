@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Katarina</title>
     <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="funciones.css">
     
 </head>
 
@@ -16,6 +17,7 @@
         <label class="logo"><img class="logo1" src="imagenes/icono.png">Historia de Katarina</label>
 
         <ul>
+            
             <li><a href="#">historia</a></li>
             <li><a href="habilidades.html">habilidades</a></li>
             <li><a href="combos.html">combos</a></li>
@@ -28,6 +30,7 @@
             <div class="article">
                 <p>
                     <img class="banner" src="imagenes/banner_katarina.jpg">
+                    
                     <br>
                     <br>
                     Nacida en una de las familias nobles más respetadas de Noxus, Katarina Du Couteau supo que era
@@ -105,7 +108,7 @@
                     <br>
                     <br>
                 </p>
-
+                <button onclick="topFunction()" id="myBtn" title="Go to top">Ir Arriba</button>
             </div>
         </article>
 
@@ -124,14 +127,50 @@
                             </li>
                         </span>
                         <br>
-                        <img class="ImagenAside" src="imagenes/Academia.jpg">
+                        <img id="myImg" alt="Katarina Academia de combate"  class="ImagenAside" src="imagenes/Academia.jpg">
+                        
+                        <div id="myModal" class="modal">
+
+                            
+                            <span class="close">&times;</span>
+                          
+                           
+                            <img class="modal-content" id="img01">
+                          
+                            
+                            <div id="caption"></div>
+                          </div>
                         <br>
                         <br>
-                        <p>
-                            Segun una encuesta de reddit donde todos los jugadores de katarina participaron, la mayoria
-                            de personas eligieron "Katarina academia de combate" como la mejor skin de katarina lanzada
-                            hasta el momento.
-                        </p>
+
+                        <div id="overlay" onclick="off()">
+                            <div id="text">Hubieron un total de 2 millones de participantes en el que el resultado fue:
+                                <br>
+                                <br>
+                                Katarina academia : 50%
+                                <br>
+                                Katarina reina guerrera :   20%                                           
+                                <br>
+                                PROYECTO: Katarina : 10%
+                                <br>
+                                
+                                Katarina Belleza Mortal: 10% 
+                                <br>
+                                Katarina Luna de Sangre: 10%
+                                <br>
+                                Katarina Tormenta de Arena: 0%
+                            </div>
+                          </div>
+                          
+                          <div class="textoaside">
+                            <p>Segun una encuesta de reddit donde todos los jugadores de katarina participaron, la mayoria
+                                de personas eligieron "Katarina academia de combate" como la mejor skin de katarina lanzada
+                                hasta el momento.</p>
+                            <button class="textoaside" onclick="on()">Dale aqui para ver los detalles de la encuesta</button>
+                          </div>
+  
+                            </div>
+                        </div>
                         <br>
                     </ul>
                     </p>
@@ -141,8 +180,8 @@
                         <li>
                             <h2>Otras skins destacadas</h2>
                         </li>
-                        <br>
-                        <li>Katarina reina guerrera</li>
+                        <br>                       
+                            <li>Katarina reina guerrera</li>                                               
                         <br>
                         <li>PROYECTO: Katarina</li>
                         <br>
@@ -173,6 +212,11 @@
             <li><a href="clips.html">clips</a></li>
         </ul>
     </footer>
+
+<script src="funciones.js"></script>
+
+
+
 
 </body>
 
