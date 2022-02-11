@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="contacto.css">
+    <link rel="stylesheet" href="css\contacto.css">
     <title>Contacto</title>
 </head>
 <body>
@@ -32,26 +32,29 @@
                                     <!--Área de texto para escribir nombre y apellidos-->
     
                                     <legend>Contacto:</legend><br>
-                                    <label>Nombre:</label><br>
-                                    <input type="text" name="nombre" placeholder="Nombre" id="c"><br><br>
+
+                                    <label>Nombre:</label><br>                                   
+                                    <input id="input" maxlength="15"required  placeholder="Nombre" type="text" onkeyup="validarInput()"><br><br>
+                                    <div id="mensaje"></div>
     
                                     <label>Primer apellido:</label><br>
-                                    <input type="text" name="apellido1" placeholder="Primer apellido"><br><br>
-    
+                                    <input id="input2"  maxlength="15" required  placeholder="Primer apellido" type="text" onkeyup="validarInput2()" ><br><br>
+                                    <div id="mensaje2"></div>
+
                                     <label>Segundo apellido:</label><br>
-                                    <input type="text" name="apellido2" placeholder="Segundo apellido"><br><br>
-    
+                                    <input id="input3" maxlength="15" required placeholder="Segundo apellido" type="text" onkeyup="validarInput3()"><br><br>
+                                    <div id="mensaje3"></div>
                                     <!--Selector con cada sexo en "input type=radio" para que se tenga que elegir obligatoriamente-->
     
                                     <p>Sexo:<br><br>
     
                                         <label>
     
-                                            <input type="radio" name="sexo"><span>Hombre</span><br><br>
+                                            <input type="radio" required name="sexo"><span>Hombre</span><br><br>
     
-                                            <input type="radio" name="sexo"><span>Mujer</span><br><br>
+                                            <input type="radio" required name="sexo"><span>Mujer</span><br><br>
     
-                                            <input type="radio" name="sexo"><span>Otro</span><br><br>
+                                            <input type="radio"required name="sexo"><span>Otro</span><br><br>
     
                                         </label>
                                     </p>
@@ -60,22 +63,24 @@
                                     <!--fecha de nacimiento-->
     
                                     <label>Fecha de nacimiento</label><br><br>
-                                    <input type="date" name="fecha" placeholder="Fecha de nacimiento"><br><br>
-    
+                                    <input type="date" name="fecha"   required placeholder="Fecha de nacimiento"><br><br>
+                                    
                                     <!--correo electrónico-->
     
                                     <label>Correo electrónico</label><br><br>
-                                    <input type="email" name="email" placeholder="Correo electrónico"><br><br>
-    
+                                    <input type="email" id="input5" maxlength="30" required  placeholder="Email"onkeyup="validarInput5()"><br><br>
+                                    <div id="mensaje5"></div>
                                     <!--motivo-->
     
                                     <label>Motivo</label><br><br>
-                                    <textarea name="razon" placeholder="Escribe tu razón..." rows="10"
+                                    <textarea  id="input6" onkeyup="validarInput6()"  maxlength="100" required  placeholder="Escribe tu razón..." rows="10"
                                         cols="30"></textarea><br><br>
+                                        <div id="mensaje6"></div>
     
                                     <!--alerta-->
     
-                                    <input type="submit" value="Enviar" onclick="alert('Informacion enviada')"><br><br>
+                                    <input type="submit" onclick="validar(),validar2(),validar3(),validar4(),validar5(),validar6()"><br><br>
+                                   
                                 </fieldset>
                                 <br>
                                 
@@ -102,5 +107,6 @@
             </ul>
         
     </footer>
+    <script src="js\contacto.js"></script>
 </body>
 </html>

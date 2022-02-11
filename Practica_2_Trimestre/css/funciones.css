@@ -79,6 +79,12 @@
     width: 80%;
     max-width: 100px;
   }
+  .modal-content2 {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 400px;
+  }
   
   /* Caption of Modal Image (Image Text) - Same Width as the Image */
   #caption {

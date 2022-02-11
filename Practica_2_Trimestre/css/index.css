@@ -6,11 +6,7 @@
     box-sizing: border-box;
 }
 
-.gif{
-    text-align: center;
-    margin-top: 12vh;
-    margin-right: 20vh;
-}
+
 body{
     background-color: white;
     padding-left: 2px;
@@ -78,6 +74,7 @@ label.logo{
     line-height: 80px;
     padding: 0 100px;
     font-weight: bold;
+    
 }
 
 .logo1{
@@ -119,14 +116,19 @@ aside{
     margin-left: 7vh;
 }
 
+.textoaside{
+    margin-top: 2vh;
+    padding:20px;
+
+}
+
+
 .article{
     margin-top: 2vh;
     margin-left: 20vh;
     margin-right: 5vh;
     width: 50vw;
 }
-
-
 
 header{
     display: flex;
@@ -136,6 +138,7 @@ header{
 .lista{
     color:black;
     list-style: none;
+    margin-left: 6vh;
 }
 
 .entradatitulo{
@@ -143,20 +146,20 @@ header{
 }
 
 
-.habilidad{ 
-    width: 3vw;
-    cursor: pointer;
+.banner{ 
+    width: 50vw;
 }
-
-video{
-    width: 25vw;
-    margin-left: 10vw;
-}
-
 .ImagenAside{
     width: 10vw;
     margin-left: 12vh;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+  
 }
+
+
+
 
 @media screen and (max-width: 850px){
    

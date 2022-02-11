@@ -1,4 +1,4 @@
-//Imagenes:
+//ZoomImagenes:
 var modal = document.getElementById("myModal");
 
 
@@ -24,10 +24,6 @@ span.onclick = function() {
 }
 
 
-
-
-
-
 /*-----------------------------------------*/
 //Boton:
 mybutton = document.getElementById("myBtn");
@@ -35,6 +31,7 @@ mybutton = document.getElementById("myBtn");
 
 window.onscroll = function() {scrollFunction()};
 
+//Funcion para que al pulsar el boton suba arriba del todo
 function scrollFunction() {
   if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
     mybutton.style.display = "block";
@@ -50,6 +47,7 @@ function topFunction() {
 }
 /*-----------------------------------------*/
 //Overlay:
+
 function on() {
     document.getElementById("overlay").style.display = "block";
   }
@@ -57,6 +55,10 @@ function on() {
   function off() {
     document.getElementById("overlay").style.display = "none";
   }
+
+
+
+
 
 
 
